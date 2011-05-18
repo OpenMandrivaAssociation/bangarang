@@ -1,14 +1,13 @@
 Summary:        Media player for KDE using nepomuk
 Name:           bangarang
-Version:        1.0
-Release:        %mkrel 2
+Version:        2.0.1
+Release:        %mkrel 1
 License:        GPLv2+
 Group:          Graphical desktop/KDE
-Source0:        113305-%name-%version.tar.gz
+Source0:        http://bangarangissuetracking.googlecode.com/files/%{name}-%{version}.tar.gz
 URL:            http://bangarangkde.wordpress.com/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  kdelibs4-devel
-BuildRequires:  kdemultimedia4-devel
 BuildRequires:  taglib-devel
 
 %description
