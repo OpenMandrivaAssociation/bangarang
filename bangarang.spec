@@ -1,13 +1,10 @@
-# Will be removed when next stable release is out
-%define		git 20111121
-
 Summary:	Media player for KDE using nepomuk
 Name:		bangarang
-Version:	2.0.1.%{git}
+Version:	2.1
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Source0:	http://bangarangissuetracking.googlecode.com/files/%{name}-%{version}.tar.bz2
+Source0:	http://bangarangissuetracking.googlecode.com/files/%{name}-%{version}.tar.gz
 URL:		http://bangarangkde.wordpress.com/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	automoc4
