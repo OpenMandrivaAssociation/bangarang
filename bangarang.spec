@@ -1,13 +1,12 @@
 Summary:	Media player for KDE using nepomuk
 Name:		bangarang
 Version:	2.1
-Release:	%mkrel 2
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Source0:	http://bangarangissuetracking.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		bangarang-2.1-ru.patch
 URL:		http://bangarangkde.wordpress.com/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	automoc4
 BuildRequires:	kdelibs4-devel >= 2:4.6
 BuildRequires:	taglib-devel
@@ -29,16 +28,19 @@ Bangarang is a media player for KDE using nepomuk to store informations
 %setup -q -n %{name}-%{name}
 %patch0 -p1 -b .ru
 
+# GCC 4.7 fix
+sed -i '22i#include <unistd.h>' src/platform/infofetchers/{lastfm,tmdb,tvdb}infofetcher.h
+  
 %build
 %cmake_kde4
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std -C build
 
 %find_lang %{name}
 
-%clean
-rm -rf %{buildroot}
+
+
+
 
