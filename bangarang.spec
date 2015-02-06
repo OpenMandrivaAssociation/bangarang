@@ -1,7 +1,7 @@
 Summary:	Media player for KDE using nepomuk
 Name:		bangarang
 Version:	2.1
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://bangarangkde.wordpress.com/
