@@ -4,7 +4,7 @@ Version:	2.1
 Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://bangarangkde.wordpress.com/
+Url:		https://bangarangkde.wordpress.com/
 Source0:	http://bangarangissuetracking.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		bangarang-2.1-ru.patch
 BuildRequires:	automoc4
